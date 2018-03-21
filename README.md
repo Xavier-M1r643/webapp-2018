@@ -5,5 +5,6 @@
 - Sass
 - Webpack
 - PostCSS
+- JQuery
 
 ### Avec compte Git/Github.
