@@ -4,5 +4,6 @@
 - Babel
 - Sass
 - Webpack
+- PostCSS
 
 ### Avec compte Git/Github.
