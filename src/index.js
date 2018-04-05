@@ -41,7 +41,7 @@ function dateDuJour() {
 function meteoDuJour() {
   
   const infosMeteo = {
-    "villeID":"6325494",
+    "villeID":"2988507",
     "units":"metric",
     "lang":"fr"
   };
