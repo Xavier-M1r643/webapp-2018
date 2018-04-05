@@ -1,0 +1,136 @@
+.browserupgrade {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+}
+
+.header,
+.marketing,
+.statistiques,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header h3 {
+  line-height: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 19px;
+}
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  color: #777;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron {
+/*    background: url("../images/paris.jpg") no-repeat;*/
+/*    background: url(../images/quebec.jpg) no-repeat;*/
+/*    background-position: -50px -200px;*/
+  background-size: cover;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.marketing, .statistiques {
+  margin: 40px 20px;
+}
+
+.marketing p + h4, .statistiques p + h4 {
+  margin: 28px;
+}
+
+/** -----------------------------------------------------------------------------------------  */
+
+canvas {
+  margin-left: 3.5em;
+}
+
+[class^=conteneur-] {
+  padding:0;
+}
+
+.conteneur-temp {
+  height: 140px;
+}
+
+.conteneur-temp > h4 {
+  margin: 0;
+}
+
+.conteneur-temp, .conteneur-tend, #humidite {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius:10px;
+}
+
+#humidite {
+  margin-top: 2em;
+  height: 105px;
+}
+
+/*#humidite h3 {}*/
+
+.conteneur-tend {
+  height:260px;
+  padding: 0.5em 0;
+}
+
+#tendance {
+  font-style: italic;
+  margin-top: 0.7em;
+  margin-left: 0.7em;  
+}
+
+p.ville {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius:10px;
+  padding: 0.5em 0;
+}
+
+/*p.ville > strong {}*/
+
+.jumbotron > h1 {
+    color: #000;    
+}
+
+
+/** -----------------------------------------------------------------------------------------  */
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  .header,
+  .marketing,
+  .statistiques,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

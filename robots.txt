@@ -1,0 +1,9 @@
+# robotstxt.org/
+
+User-agent: * 
+Disallow: test
+Disallow: bower_components
+Disallow: node_modules
+Disallow: test
+Disallow: *.JPG
+Disallow: *.url

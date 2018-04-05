@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Index</title>
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- Fontes -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gafata">
+
+  <!-- Fontes icônes -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- ANIMATE -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="styles.css">
+
+
+
+  <!-- -------------------------------- HANDLEBARS --------------------------------- -->
+  <script id="handlebars-meteo" type="text/x-handlebars-template">
+    <h1>Météo
+      <p class="ville"><strong class="mx-auto">{{ville}}</strong></p>
+    </h1>
+
+    <div class="row statistiques">
+        <div class="conteneur-temp col-5 p-4 m-2">
+          <h4>Température</h4>
+          <h2 class="pt-3">{{temperature}}</h2>
+        </div>
+        <div class="conteneur-temp col-5 p-4 m-2">
+          <h4>Humidité</h4>
+          <h2 class="pt-3">{{humidite}}</h2>
+        </div>
+        <div class="conteneur-tend col-10 m-4">
+          <h4>Tendance</h4>
+          <div>{{tendance}}</div><br>
+           <div>
+             <img src="{{imagemeteo}}" id="imgmeteo" alt="" width="128" height="128">
+           </div>
+        </div>
+    </div>
+  </script>  
+  
+
+</head>
+
+<body role="application">
+	<!--[if lte IE 9]>
+	  <p class="browserupgrade">Votre navigateur <strong>n'est plus à jour</strong> browser. SVP <a href="https://browsehappy.com/">Effectuez la mise à jour de votre navigateur</a> afin d'améliorer l'expérience et la sécurité.</p>
+	<![endif]-->
+	
+	<!-- ---------------------------------------------------------- NAVIGATION -------------------------------------------------- -->
+	<!-- NAV v.4 -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+	<a class="navbar-brand" href="#">Étude WEBPACK (Index) | B4</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+		<li class="nav-item active">
+		  <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Lien</a>
+		</li>
+		<li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Sous-menu
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Autre action</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Extra</a>
+		  </div>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link disabled" href="#">Inactif</a>
+		</li>
+	  </ul>
+	  <form class="form-inline my-2 my-lg-0">
+		<input class="form-control mr-sm-2" type="search" placeholder="Recherchez ici" aria-label="Search">
+		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+	  </form>
+	</div>
+	</nav>
+	
+
+    <div class="container" role="document">
+     
+      <div class="jumbotron">
+        
+        <!--      MÉTÉO      -->
+<!--
+        <h1>Météo</h1>
+        <p class="ville"><strong class="mx-auto">&nbsp;</strong></p>
+
+        <div class="row statistiques">
+          <div class="conteneur-temp col-md-6 p-4">
+              <h4>Température</h4>
+              <div id="temperature" class="pb-3">&nbsp;</div>
+              <div id="humidite" class="pt-3">&nbsp;</div>
+          </div>
+          <div class="conteneur-tend col-md-5 ml-4">
+              <h4>Tendance</h4>
+              <div id="tendance"></div><br>
+              <div id="imgmeteo"></div>
+          </div>
+        </div>
+-->
+      </div>
+
+      <div class="row statistiques">
+          <div class="col-12">
+              <h3>Web Stack</h3>
+              <p>HTML5 Boilerplate | JQuery | Modernizr | Bootstrap | Moment | OpenWeatherMap | Handlebars.</p>
+              <a href="about.html" class="btn btn-danger">Lien vers about.html</a>
+          </div>
+      </div>
+
+      <div class="footer">
+          <p>♥ XavierM2018 - Nous sommes le&nbsp;<span class="date"></span></p>
+      </div>
+  </div><!-- /.container -->
+
+
+  <!-- MODERNIZR
+  <script src="dist-2018/js/vendor/modernizr-3.5.0.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!--	<script>window.jQuery || document.write('<script src="dist-2018/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+
+  <script>
+    window.etat = "index";
+  </script>
+
+  <script src="app.bundle.js"></script>
+    
+</body>
+</html>
