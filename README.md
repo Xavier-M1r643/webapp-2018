@@ -1,4 +1,4 @@
-# App Météo 2018  
+# WebApp Météo 2018 (Webpack).
 
 ## Avec les technologies suivantes :
 - Babel
@@ -9,4 +9,4 @@
 - Bootstrap 4
 - Handlebars
 
-#### webapp-2018.
+#### webapp-meteo_2018.
