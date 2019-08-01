@@ -1,4 +1,4 @@
-# Étude Webpack (webapp-2018) 
+# App Météo 2018  
 
 ## Avec les technologies suivantes :
 - Babel
@@ -6,5 +6,7 @@
 - Webpack
 - PostCSS
 - JQuery
+- Bootstrap 4
+- Handlebars
 
-### Avec compte Git/Github.
+#### webapp-2018.
