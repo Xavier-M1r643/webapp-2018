@@ -9,4 +9,6 @@
 - Bootstrap 4
 - Handlebars
 
+### HTML5 Boilerplate | Modernizr | Moment | OpenWeatherMap
+
 #### webapp-meteo_2018.
